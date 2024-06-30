@@ -1,5 +1,6 @@
 {
   "contractAddress": "0x0d33801785340072C452b994496B19f196b7eE15",
+  "tokenAddress": "0x68A8DDD7a59A900E0657e9f8bbE02B70c947f25F",
   "genesisBlock": 117512,
   "abi": [
     {
@@ -846,15 +847,21 @@
       "inputs": [
         {
           "indexed": true,
-          "internalType": "bytes",
-          "name": "publicKey",
-          "type": "bytes"
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
         },
         {
           "indexed": false,
           "internalType": "uint64[]",
           "name": "operatorIds",
           "type": "uint64[]"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "publicKey",
+          "type": "bytes"
         }
       ],
       "name": "ValidatorExited",
